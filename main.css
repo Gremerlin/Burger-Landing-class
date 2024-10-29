@@ -1,0 +1,304 @@
+/* --------------------------------------------------------------------------------------------------- */
+/* подключение шрифтов через css? */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* общие стили */
+/* --------------------------------------------------------------------------------------------------- */
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+    margin: 0;
+}
+p{
+margin: 0;
+}
+
+p + p{
+    margin-top: 15px;
+
+}
+img{
+     max-width: 100%
+}
+body {
+    font-family: "Roboto", sans-serif;
+    /* font-weight: 500; */
+    background-color: #1C1C1C;
+    color: #fff;
+    margin: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 25px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    width: 165px;
+    height: 50px;
+    background:#f6762c;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+/* стили шапки */
+/* --------------------------------------------------------------------------------------------------- */
+.header {
+    padding: 25px 0;
+
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+
+}
+
+.header__nav {
+
+}
+
+.header__list {
+    display: flex;
+    gap: 30px;
+}
+
+.header__nav a{
+    font-size: 14px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+
+}
+
+.header__nav a.active{
+    opacity: 1;
+}
+
+.header__nav a:hover{
+    opacity: 0.9;
+}
+
+
+
+
+ /* .welcome */
+/* --------------------------------------------------------------------------------------------------- */
+
+ .main {
+
+ }
+
+.welcome{
+
+
+     /* position: relative;  */
+    /* z-index: 10; */
+    /* box-sizing: border-box; */
+    /* min-height: auto; */
+
+    margin-top: -100px;
+    padding: 190px 0;
+
+
+   
+    
+    background-image: url("./images/welcome-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+ .welcome__text{
+    /* position:sticky; 
+    z-index: 1; */
+    width: 550px;
+ }
+
+.welcome__subtitle {
+    margin-bottom: 7px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+ }
+
+.welcome_title {
+    font-size: 58px;
+
+ }
+
+ .welcome__desc {
+    margin: 36px 0;
+    font-size: 18px;
+ }
+
+
+/* .trade-list */
+/* --------------------------------------------------------------------------------------------------- */
+
+ .trade-list { 
+
+ }
+
+ .trade-list .container{
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:40px 0px;
+    
+
+ }
+
+.trade-list__card { 
+    width: 260px;
+    border-radius: 10px;
+    background: #312F30;
+    overflow: hidden;
+    text-align: center;
+}
+
+.trade-list__card__img { 
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
+
+
+.trade-list__text-padding {
+    padding: 30px 15px;
+ }
+
+.trade-list__card__title { 
+    margin-bottom: 13px;
+    font-size: 20px;
+}
+
+.trade-list__card__desc { 
+    /* font-size: 16px; */
+    opacity: 0.7;
+
+}
+
+/* .order */
+/* --------------------------------------------------------------------------------------------------- */
+.order { 
+    background-color: #312F30;
+}
+
+.order .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    padding-top: 60px;
+    padding-bottom: 60px; 
+}
+
+.order__image{
+    max-width: 470px;
+}
+
+.order__text { 
+    max-width: 360px;
+    padding-right: 100px;
+    /* transform: scale(120%); */
+}
+.order__title {
+    font-size: 44px;
+    margin-bottom: 25px;
+ }
+.order__desc { 
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+
+.order__price_container{
+    margin-bottom: 10px;
+}
+
+.order__price {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #F6762C;
+
+ }
+
+ /* хитрым образом задаем отступы между спанами
+ сработает только в том случае если два объекта одинакового типа объекта рядом */
+.order__price + .order__price{
+    margin-left: 3px;
+}
+
+.oprder__price--old { 
+    opacity: 0.5;
+    text-decoration-line: line-through;
+    margin-bottom: 50px;
+}
+/* 4 windows */
+/* --------------------------------------------------------------------------------------------------- */
+
+.advertising{
+    /* background-color: #312F30; */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+
+.gridad{
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    grid-template-rows: repeat(2,300px);
+    justify-content: center;
+    gap: 30px;
+
+
+}
+.gridad__block{
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gridad__block1{
+    background-image: url("./images/product-1.jpg");
+}
+
+.gridad__block2{
+    background-image: url("./images/product-2.jpg");
+}
+
+.gridad__block3{
+    background-image: url("./images/product-3.jpg");
+}
+
+.gridad__block4{
+    background-image: url("./images/product-4.jpg");
+}
